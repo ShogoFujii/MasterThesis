@@ -1,0 +1,80 @@
+\contentsline {chapter}{\numberline {第1章}序論}{1}
+\contentsline {section}{\numberline {1.1}研究背景}{1}
+\contentsline {section}{\numberline {1.2}研究目的}{3}
+\contentsline {section}{\numberline {1.3}本研究の貢献}{3}
+\contentsline {section}{\numberline {1.4}本研究の構成}{4}
+\contentsline {chapter}{\numberline {第2章}関連研究}{5}
+\contentsline {section}{\numberline {2.1}キュー長の縮小}{5}
+\contentsline {subsection}{\numberline {2.1.1}DCTCP}{6}
+\contentsline {subsection}{\numberline {2.1.2}HULL}{7}
+\contentsline {section}{\numberline {2.2}再送の高速化}{7}
+\contentsline {subsection}{\numberline {2.2.1}DIBS}{8}
+\contentsline {subsection}{\numberline {2.2.2}FastLane, CP}{8}
+\contentsline {section}{\numberline {2.3}ショートフローへの優先付け}{9}
+\contentsline {subsection}{\numberline {2.3.1}デッドラインベースの優先付け}{10}
+\contentsline {subsubsection}{$D^3$}{10}
+\contentsline {subsubsection}{PDQ}{10}
+\contentsline {subsubsection}{$D^{2}TCP$, MCP}{10}
+\contentsline {subsection}{\numberline {2.3.2}アプリケーションベースの優先付け}{11}
+\contentsline {subsubsection}{DeTail}{11}
+\contentsline {subsubsection}{pFabric}{12}
+\contentsline {subsection}{\numberline {2.3.3}複数経路の利用}{12}
+\contentsline {subsubsection}{DeTail}{12}
+\contentsline {subsubsection}{RepFlow}{13}
+\contentsline {section}{\numberline {2.4}本研究の位置付け}{13}
+\contentsline {chapter}{\numberline {第3章}データセンターネットワーク}{15}
+\contentsline {section}{\numberline {3.1}トポロジー}{15}
+\contentsline {section}{\numberline {3.2}マルチパス, マルチホーミングを実現するプロトコル}{15}
+\contentsline {subsection}{\numberline {3.2.1}データリンク層におけるアプローチ}{16}
+\contentsline {subsubsection}{LACP}{16}
+\contentsline {subsection}{\numberline {3.2.2}トランスポート層におけるアプローチ}{17}
+\contentsline {subsubsection}{SCTP}{17}
+\contentsline {subsubsection}{Multipath TCP}{18}
+\contentsline {section}{\numberline {3.3}トラフィック}{19}
+\contentsline {section}{\numberline {3.4}アプリケーション}{20}
+\contentsline {chapter}{\numberline {第4章}Motivated work}{23}
+\contentsline {section}{\numberline {4.1}評価実験と考察}{23}
+\contentsline {subsection}{\numberline {4.1.1}想定環境}{23}
+\contentsline {subsection}{\numberline {4.1.2}シミュレーション結果}{24}
+\contentsline {subsubsection}{Query traffic}{24}
+\contentsline {subsubsection}{Short message traffic}{24}
+\contentsline {subsubsection}{Background traffic}{25}
+\contentsline {section}{\numberline {4.2}再現シミュレーション}{25}
+\contentsline {subsection}{\numberline {4.2.1}再現シミュレーション実験環境}{26}
+\contentsline {subsubsection}{設定パラメータに対する有効性の検証}{26}
+\contentsline {subsection}{\numberline {4.2.2}再現結果}{27}
+\contentsline {subsection}{\numberline {4.2.3}考察}{28}
+\contentsline {subsubsection}{パケットロスが発生しないフローパターン}{28}
+\contentsline {subsubsection}{パケットロスが生じたフローパターン}{28}
+\contentsline {subsubsection}{TCP v.s. MPTCP}{29}
+\contentsline {section}{\numberline {4.3}実トラフィック解析}{29}
+\contentsline {subsection}{\numberline {4.3.1}性能障害}{33}
+\contentsline {subsubsection}{スイッチ - 性能障害}{33}
+\contentsline {subsubsection}{エンドノード - 性能障害}{34}
+\contentsline {section}{\numberline {4.4}検証実験}{35}
+\contentsline {subsection}{\numberline {4.4.1}実験環境}{35}
+\contentsline {subsection}{\numberline {4.4.2}実験結果}{35}
+\contentsline {subsection}{\numberline {4.4.3}考察}{37}
+\contentsline {subsection}{\numberline {4.4.4}Directing result}{38}
+\contentsline {chapter}{\numberline {第5章}提案手法}{40}
+\contentsline {section}{\numberline {5.1}Motivation}{40}
+\contentsline {section}{\numberline {5.2}本研究の位置付け}{41}
+\contentsline {section}{\numberline {5.3}Design}{42}
+\contentsline {subsection}{\numberline {5.3.1}データセンターレーンモデル}{42}
+\contentsline {subsubsection}{BackGround}{43}
+\contentsline {subsubsection}{トポロジー}{43}
+\contentsline {subsubsection}{Motivation for lane model}{44}
+\contentsline {subsubsection}{アーキテクチャ}{45}
+\contentsline {subsection}{\numberline {5.3.2}経路切り替えアルゴリズム}{46}
+\contentsline {subsubsection}{コストベースの経路切り替え手法}{47}
+\contentsline {section}{\numberline {5.4}Discussion}{50}
+\contentsline {subsection}{\numberline {5.4.1}利点}{50}
+\contentsline {subsection}{\numberline {5.4.2}MPTCP実装:IPアドレスペア問題}{51}
+\contentsline {subsection}{\numberline {5.4.3}MHFT形成するためのコスト}{52}
+\contentsline {subsection}{\numberline {5.4.4}アルゴリズム実装の検討}{53}
+\contentsline {chapter}{\numberline {第6章}評価実験}{54}
+\contentsline {chapter}{\numberline {第7章}考察}{55}
+\contentsline {chapter}{\numberline {第8章}結論}{56}
+\contentsline {section}{\numberline {8.1}今後の課題}{56}
+\contentsline {chapter}{参考文献}{59}
+\contentsline {section}{\numberline {付録A}リンクパフォーマンス関数:Davidson関数}{63}

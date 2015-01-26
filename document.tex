@@ -1,0 +1,290 @@
+\documentclass[a4paper,11pt,oneside,openany,uplatex]{jsbook}
+%
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{theorem}
+\usepackage{bm}
+\usepackage{ascmac}
+\usepackage{subfigure}
+\usepackage{multicol}
+\usepackage{setspace}
+\usepackage{mediabb}
+\usepackage{float}
+\usepackage{latexsym}
+\usepackage{url}
+\usepackage{cite}
+\usepackage{layout}
+\usepackage{verbatim}
+\usepackage{wrapfig}
+\usepackage{ascmac}
+\usepackage{makeidx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+
+
+\includeonly{proposal}
+
+% \usepackage[top=30truemm,bottom=30truemm,left=25truemm,right=25truemm]{geometry}
+%\usepackage{times, mathptm}
+%
+\renewcommand{\baselinestretch}{1.0}
+\renewcommand{\figurename}{Fig.}
+\renewcommand{\tablename}{Table.}
+\renewcommand{\headfont}{\bfseries}
+
+\makeindex
+
+\setlength{\textwidth}{150truemm}
+\setlength{\fullwidth}{\textwidth}
+\setlength{\oddsidemargin}{30truemm}   % 左余白
+\addtolength{\oddsidemargin}{-1truein} % 左位置デフォルトから-1inch
+\setlength{\topmargin}{30truemm}       % 上余白
+\setlength{\textheight}{227truemm}     % テキスト高さ: 297-(30+30)=237mm
+\addtolength{\topmargin}{-1truein}     % 上位置デフォルトから-1inch
+\setlength{\voffset}{-0.55in}
+\makeatletter
+%
+\def\thesis{Master Thesis}
+\def\gakui{2014年度　修士論文}
+\def\title#1{\def\title{#1}}
+\def\daimoku#1{\def\daimoku{#1}}
+\def\id#1{\def\id{#1}}
+\def\department#1{\def\department{#1}}
+\def\shozoku#1{\def\shozoku{#1}}
+\def\author#1{\def\author{#1}}
+\def\chosha#1{\def\chosha{#1}}
+\def\submission#1{\def\@submission{#1}}
+\def\teacher#1{\def\teacher{#1}}
+%
+\def\maketitlea{
+\begin{center}
+{\huge \thesis \par} 
+\vspace{10mm}
+{\huge \gakui \par} 
+\vspace{10mm}
+{\LARGE \daimoku \par}% 論文のタイトル部分
+\vspace{10mm}
+{\Large \title \par} %
+\vspace{10mm}
+{\Large \@submission \par} %
+\vspace{20mm}
+{\Large \shozoku \par} 
+{\Large \id \chosha \par} % 学籍番号部分
+\vspace{10mm}
+{\Large 指導教官  \teacher \par}
+\vspace{10mm}
+{\Large \department \par}
+\vspace{10mm}
+{\LARGE \author}
+\end{center}
+%\par\vskip 1.5em
+\clearpage
+}
+%
+\daimoku{Multipath TCPを用いた \\ データセンターネットワークにおけるショートフロー完結時間の改善}
+\title{Improving the datacenter network with multipath TCP}
+\date{\today}
+\shozoku{東京大学大学院 \\ 工学系研究科 電気系工学専攻}
+\department{The University of Tokyo \\ Graduate School of Engineering,
+Department of Electrical Engineering and Information Systems}
+\id{37-136482}
+\chosha{藤居 翔吾}
+\author{Fujii Shogo}
+\submission{平成26年 2月5日 提出}
+\teacher{関谷 勇司}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+\makeatother
+%
+
+\begin{document}
+%
+\pagestyle{empty}
+\maketitlea
+
+
+
+\begin{center}
+{\large {\bf 要旨}}
+\end{center}
+
+\vspace{20mm}
+
+\begin{center}
+{\large \bf Abstract}
+\end{center}
+\clearpage
+
+\frontmatter
+\pagestyle{headings}
+\tableofcontents 
+\clearpage
+
+\frontmatter
+\pagestyle{headings}
+\listoffigures
+\clearpage
+
+
+\frontmatter
+\pagestyle{headings}
+\listoftables
+\clearpage
+
+
+
+\mainmatter
+\pagestyle{headings}
+
+\include{introduction}
+
+\include{related_work}
+
+\include{datacenter_network}
+
+\include{motivated_work}
+
+\include{proposal}
+
+\include{evaluation}
+
+\include{consideration}
+
+\include{conclusion}
+
+\include{my_work}
+
+\include{thanks}
+
+
+\vspace{1cm}
+\begin{thebibliography}{99}
+\bibitem{IBM_rep}{日本アイ・ビー・エム株式会社. IBM 第1章
+大容量データのバックアップ,
+\url{http://www-06.ibm.com/systems/jp/storage/column/backup/01.html}}
+\bibitem{amazon}{Jim Liddle. Amazon found every 100ms of latency cost them 1\%
+in sales, August 2008.
+\url{http://blog.gigaspaces.com/amazon-found-every-100ms-of-latency-cost-them-1-in-sales/}}
+
+\bibitem{customer_impact}{R. Kohavi et al. Practical Guide to Controlled
+Experiments on theWeb: Listen to Your Customers not to the HiPPO. KDD, 2007.}
+\bibitem{requirement}{J. Hamilton. On designing and deploying Internet-scale
+services. In USENIX LISA, 2007.}
+\bibitem{presto}{Facebook. Presto: Interacting with petabytes
+of data at Facebook,
+\url{https://www.facebook.com/notes/facebook-engineering/presto-interacting-with-petabytes-of-data-at-facebook/10151786197628920}}
+\bibitem{mapreduce}{Dean, Jeffrey, and Sanjay
+Ghemawat. "MapReduce: simplified data processing on large clusters." Communications of the ACM 51.1 (2008): 107-113.}
+\bibitem{fattree}{Al-Fares, Mohammad, Alexander Loukissas, and Amin Vahdat. "A
+scalable, commodity data center network architecture." ACM SIGCOMM Computer
+Communication Review. Vol. 3}
+\bibitem{dctcp}{Alizadeh, Mohammad, et al. "Data center tcp (dctcp)." ACM SIGCOMM Computer Communication Review 40.4 (2010): 63-74.}
+\bibitem{improving}{Raiciu, Costin, et al. "Improving datacenter performance and
+robustness with multipath TCP." ACM SIGCOMM Computer Communication Review. Vol. 41. No. 4. ACM, 2011.}
+\bibitem{detail}{Zats, David, et al. "DeTail: Reducing the flow completion time
+tail in datacenter networks." ACM SIGCOMM Computer Communication Review 42.4 (2012): 139-150.}
+\bibitem{p_fab}{Alizadeh, Mohammad, et al. "pfabric: Minimal near-optimal datacenter transport." Proceedings of the ACM SIGCOMM 2013 conference on SIGCOMM. ACM, 2013.}
+\bibitem{click}{Kohler, Eddie, et al. "The Click modular router." ACM
+Transactions on Computer Systems (TOCS) 18.3 (2000): 263-297.}
+\bibitem{mptcp}{Ford, Alan, et al. TCP Extensions for Multipath Operation with
+Multiple Addresses: draft-ietf-mptcp-multiaddressed-03. No. Internet draft (draft-ietf-mptcp-multiaddressed-07). Roke Manor, 2011.}
+\bibitem{traffic}{Benson, Theophilus, Aditya Akella, and David A. Maltz.
+"Network traffic characteristics of data centers in the wild." Proceedings of the 10th ACM SIGCOMM conference on Internet measurement. ACM, 2010.}
+\bibitem{NAPI}{J. Salim, When NAPI Comes to Town, Proceedings of Linux 2005
+Conference, UK, August 2005.}
+\bibitem{RSS}{Microsoft corporation. scalable networking with rss, 2005.}
+\bibitem{RFS}{Herbert, T. rfs: receive flow steering, september 2010.
+http://lwn.net/Articles/381955/.} 
+\bibitem{RPS}{Herbert, T. rps: receive packet steering, september 2010.
+\url{http://lwn.net/Articles/361440/.}}
+\bibitem{mptcp_linux}{ip networking lab「MultiPath TCP - Linux Kernel
+implementation」\url{http://mptcp.info.ucl.ac.be/}} \bibitem{rtt}{Vasudevan, Vijay, et al. "Safe and effective fine-grained TCP
+retransmissions for datacenter communication." ACM SIGCOMM Computer Communication Review. Vol. 39. No. 4. ACM, 2009.}
+\bibitem{mptcp_ana}{藤居 翔吾, 田崎 創, 関谷 勇司, "MultiPath TCP
+適用時のデータセンターネットワークでのフローサイズが与える影響に関する一考察", 電子情報通信学会, 信学技法, vol. 113, no. 364,
+IA2013-65, pp. 47-52, 2013.}
+\bibitem{mptcp_ana2}{藤居 翔吾, 田崎 創, 関谷 勇司, "MultiPath TCP
+適用時のデータセンターネットワークでのフローサイズが与える影響に関する一考察", インターネットカンファレンス2014}
+\bibitem{flexible}{P. Agarwal, B. Kwan, and L. Ashvin. Flexible buffer allocation entities for
+traffic aggregate containment. US Patent 20090207848, August 2009.}
+\bibitem{synchro}{S. Floyd and V. Jacobson. The synchronization of periodic routing messages.
+IEEE/ACM ToN, 1994.}
+\bibitem{balia}{A. Walid, et al. Balanced Linked Adaptation Congestion Control
+Algorithm for MPTCP draft-walid-mptcp-congestion-control-00, 2014.}
+\bibitem{tcpdump}{tcpdump, \url{http://www.tcpdump.org/}}
+\bibitem{intel}{intel,
+\url{http://www.intel.com/content/www/us/en/network-adapters/gigabit-network-adapters/ethernet-server-adapters.html}}
+\bibitem{bottleneck}{Lu, Guohan, et al. "Using cpu as a traffic co-processing
+unit in commodity switches." Proceedings of the first workshop on Hot topics in software defined networks. ACM, 2012.}
+\bibitem{sctp}{R. Stewart. Stream Control Transmission Protocol. RFC 4960
+(Proposed Standard), September 2007. Updated by RFCs 6096, 6335. }
+\bibitem{cmt_1}{Iyengar, Janardhan R., Paul D. Amer, and Randall Stewart.
+"Concurrent multipath transfer using SCTP multihoming over independent end-to-end paths." Networking, IEEE/ACM Transactions on 14.5 (2006): 951-964.}
+\bibitem{cmt_2}{Iyengar, Janardhan, et al. "Concurrent multipath transfer using
+SCTP multihoming." SPECTS 2004 (2004).}
+\bibitem{lacp}{IEEE Standards Association. "IEEE 802.3 LAN/MAN CSMA/CD Access
+Method." (2008).}
+\bibitem{lacp_problem}{Fukunaga, Takafumi, and Hidenori Umeno. "Implementation
+and evaluation of improvement in parallel processing performance on the cluster using small-scale SMP PCs." IEEJ Transactions on Electronics, Information and Systems 128 (2008): 1842-1851.}
+\bibitem{arp}{Umeshima S, Higaki H. Extended ARP for high-per-
+formance LAN communications with multiple kinds
+of NICs. 2003-DSM-029, Vol. 2003, No. 38, p 31–36,
+2003.}
+\bibitem{oldi}{Meisner, David, et al. "Power management of online data-intensive
+services." Computer Architecture (ISCA), 2011 38th Annual International Symposium on. IEEE, 2011.}
+\bibitem{incast}{Chen, Yanpei, et al. "Understanding TCP incast throughput
+collapse in datacenter networks." Proceedings of the 1st ACM workshop on Research on enterprise networking. ACM, 2009.}
+\bibitem{desynchro}{Floyd, Sally, and Van Jacobson. "The synchronization of
+periodic routing messages." Networking, IEEE/ACM Transactions on 2.2 (1994): 122-136.}
+\bibitem{memory}{Iyer, Sundar, Ramana Rao Kompella, and N. McKeowa. "Analysis of
+a memory architecture for fast packet buffers." High Performance Switching and Routing, 2001 IEEE Workshop on. IEEE, 2001.}
+\bibitem{websearch}{Barroso, Luiz André, Jeffrey Dean, and Urs Holzle. "Web
+search for a planet: The Google cluster architecture." Micro, Ieee 23.2 (2003): 22-28.}
+\bibitem{d3}{Wilson, Christo, et al. "Better never than late: Meeting deadlines
+in datacenter networks." ACM SIGCOMM Computer Communication Review. Vol. 41. No. 4. ACM, 2011.}
+\bibitem{d2tcp}{Vamanan, Balajee, Jahangir Hasan, and T. N. Vijaykumar.
+"Deadline-aware datacenter tcp (d2tcp)." ACM SIGCOMM Computer Communication Review 42.4 (2012): 115-126.}
+\bibitem{key-value1}{Beaver, Doug, et al. "Finding a Needle in Haystack:
+Facebook's Photo Storage." OSDI. Vol. 10. 2010.}
+\bibitem{key-value2}{Hastorun, Deniz, et al. "Dynamo: Amazon’s highly available
+key-value store." In Proc. SOSP. 2007.}
+\bibitem{dryad}{Isard, Michael, et al. "Dryad: distributed data-parallel
+programs from sequential building blocks." ACM SIGOPS Operating Systems Review. Vol. 41. No. 3. ACM, 2007.}
+\bibitem{repflow}{Liu, Shuhao, et al. "RepFlow on node. js: Cutting Tail Latency
+in Data Center Networks at the Applications Layer." arXiv preprint arXiv:1407.1239 (2014).}
+\bibitem{vl2}{Greenberg, Albert, et al. "VL2: a scalable and flexible data
+center network." ACM SIGCOMM Computer Communication Review. Vol. 39. No. 4. ACM, 2009.}
+\bibitem{devoflow}{Curtis, Andrew R., et al. "Devoflow: scaling flow management
+for high-performance networks." ACM SIGCOMM Computer Communication Review. Vol. 41. No. 4. ACM, 2011.}
+\bibitem{clos}{Clos, Charles. "A Study of Non‐Blocking Switching Networks." Bell
+System Technical Journal 32.2 (1953): 406-424.}
+\bibitem{bpr}{U.S. Department of Commerce, Bureau of Public Roads(1964),
+Traffic Assignment Manual}
+\bibitem{davidson}{Davidson, K. B. "A flow travel time relationship for use in
+transportation planning." Australian Road Research Board (ARRB) Conference, 3rd, 1966, Sydney. Vol. 3. No. 1. 1966.}
+
+\end{thebibliography}
+\clearpage
+\def\thesection{}
+\def\thesubsection{\Alph{subsection}}
+\def\thesection{付録\Alph{section}}
+\setcounter{subsection}{0}
+\appendix
+\section{リンクパフォーマンス関数:Davidson関数}
+リンクパフォーマンス関数は, ネットワークを構成する個々のリンクのサービス水準をリンク交通量とリンク属性の関数として表したものである. 
+本研究では, リンクのサービス水準には, フロー完結時間(旅行時間)を用いている. 
+リンクパフォーマンス関数は, 狭義の増加関数である必要があり, このことは待ち行列理論を用いて説明することができる. 
+
+今, 
+
+
+またこの式遅れのパラメータ$J(>0)$を導入することでリンク総旅行時間は次のように定義される. 
+\begin{eqnarray}
+t(q) = t_{0} + J t_{0} \frac{\rho}{1-\rho} = t_{0}\Bigl\{ 1 + J \bigl(
+\frac{q}{C-q} \bigr) \Bigr\}
+\end{eqnarray}
+
+
+\end{document}

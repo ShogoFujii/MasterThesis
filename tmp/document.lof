@@ -1,0 +1,42 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces The control loop in DCTCP(DCTCPの制御の流れの模式図, キューの様子, しきい値を超えた時の通知の仕組み)}}{7}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Fair-share(e.g. DCTCP)and $D^3$ are sub-optimal in meeting deadline FCTベースでの通信の公平性についての図, グラフ)}}{11}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces DeTail's cross-layer design DeTailのクロスレイヤーで作用する仕組み}}{13}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces An example to understand RepFlow:RepFlowがうまく作用するシナリオ例}}{14}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Hierarchical network topology}}{16}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Fattree topology}}{16}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces BCube topology}}{17}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces OLDI architecture:OLDIアプリケーションアーキテクチャ(集約の際のデッドラインも)}}{22}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Query trafficフロー完結時間 (Background trafficなし)}}{24}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Query trafficフロー完結時間(Background trafficあり)}}{24}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Short message trafficフロー完結時間(Background trafficあり)}}{25}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Background trafficスループット}}{25}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces 再現シミュレーション環境でのネットワークトポロジー}}{27}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces 再現実験結果}}{27}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Full windowとIntensive flowの比較}}{29}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Delay with lossとExtreme delayの比較}}{29}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces 再現実験でのフロー完結時間の累積確率分布}}{29}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Prestoクラスタの定常時のトラフィック分布}}{30}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces 管理ノードから見た定常時のトラフィック累積分布}}{31}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces 定常時トラフィック:同時接続数の分布}}{31}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Prestoクラスタのジョブ実行時のトラフィック分布}}{32}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces 管理ノードから見たジョブ実行時のトラフィック累積分布}}{32}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces ジョブ実行時トラフィック:同時接続数の分布}}{32}
+\contentsline {figure}{\numberline {4.16}{\ignorespaces 中継スイッチで引き起こすボトルネック}}{34}
+\contentsline {figure}{\numberline {4.17}{\ignorespaces 中継スイッチへのNIC負荷実機実験トポロジー}}{36}
+\contentsline {figure}{\numberline {4.18}{\ignorespaces エンドノードへのNIC負荷実機実験トポロジー}}{36}
+\contentsline {figure}{\numberline {4.19}{\ignorespaces 中継スイッチに対する負荷実験での70kbベンチマークトラフィックに対するフロー完結時間とリンク利用率}}{37}
+\contentsline {figure}{\numberline {4.20}{\ignorespaces エンドノードに対する負荷実験での70kbベンチマークトラフィックに対するフロー完結時間とリンク利用率}}{38}
+\contentsline {figure}{\numberline {4.21}{\ignorespaces スイッチに対する負荷実験でのバックグラウンドフローの影響}}{39}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Scenario of queue buildup problem with multi-cost paths)}}{41}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Multi-homing in the FatTree Topology}}{44}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Datacenter Lane Network Model}}{46}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Techinical problem of creating subflow without complete paired IP addressses}}{51}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Current cost estimation vs. maximum possible number of hosts}}{52}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }

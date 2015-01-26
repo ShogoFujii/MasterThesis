@@ -1,0 +1,16 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {2.1}{\ignorespaces An overview of low latency datacenter networking proposals}}{6}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {4.1}{\ignorespaces トラフィックパターンごとのメトリック}}{24}
+\contentsline {table}{\numberline {4.2}{\ignorespaces ネットワークシミュレーション環境}}{26}
+\contentsline {table}{\numberline {4.3}{\ignorespaces 再現実験-平均フロー完結時間, 標準偏差}}{27}
+\contentsline {table}{\numberline {4.4}{\ignorespaces 完結時間別のフローパターン}}{28}
+\contentsline {table}{\numberline {4.5}{\ignorespaces 実験環境パラメータ}}{36}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {5.1}{\ignorespaces Multi-homing FatTree constitution}}{44}
+\contentsline {table}{\numberline {5.2}{\ignorespaces The Natures of the parameter and variables in Link Cost Function}}{50}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
