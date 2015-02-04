@@ -80,6 +80,7 @@ $\S$\ref{chapter:proposal}にて示した各経路状況に対応した経路切
 \delta=1$と設定する.
 
 \section{基本性能:スループット}
+\large{sec:throughput}
 初めに, 提案手法の基本的な性能として, 従来手法と提案手法の挙動の違いとして, 時系列でのスループットの変化について示す.  
 提案した二つの手法には, 予め設定するパラメータとして$t_{deadline}, \alpha \sim \delta$があるが, $\alpha
 \sim \delta$については固定し, $t_{deadline}$を変化させることで経路切替による通信性能の影響について評価する. 
@@ -101,15 +102,6 @@ Fig.\ref{fig:basic_comparison}に上記の評価結果として, 時系列ごと
 サブフローでの通信においては従来の輻輳制御を無視し, 強制的に1に設定するため, 急激にスループットが下がり, 一経路分の通信性能へと落ち着く. 
 また, デッドラインベースの切替手法では300ms時に切替が生じたが, リンクコストベースの切替手法では約180ms時に切替が生じた. 
 これは, リンクコスト算出の際のキューイング遅延の項の影響を受け, より早く経路が切り替わるという判断がされたためである. 
-% 
-% \begin{figure}[t]
-%     \begin{center}
-%     \includegraphics[autoebb, width=250pt]{./img/lane_model.pdf}
-%     \caption{Datacenter Lane Network Model}
-%     %\ecaption{The control loop in DCTCP}
-%     \label{fig:lane_model}
-%     \end{center}
-% \end{figure}
 
 
 \begin{figure}[t]
@@ -155,60 +147,6 @@ Fig.\ref{fig:basic_comparison}に上記の評価結果として, 時系列ごと
     \end{center}
 \end{figure}
 
-\section{基本性能:切替時間}
-次にリンクコストベースの切替手法における各パラメータ毎の挙動の違いを示す. 
-デッドラインベースの切替手法とは異なり, リンクコストベースの切替手法では各リンクの経路状況を表すためのリンクコスト値があり, パラメータ$\alpha \sim
-\delta$がある. 
-各パラメータの意味についてはTable.\ref{table:link_cost_nature}の通りであり,
-これらを変化させることで, 各リンクの通信状況に対する経路切替の挙動の変化を通信開始から経路切替が発生するまでの時間によって示す.
-この評価ではエンドノード間の1対1の通信を想定しており, ベンチマークトラフィックには,
-iperfを用いて継続してデータ転送を行った.  
-また, トポロジーとしてk=4 MHFTを用いる. 
-このトポロジーでは, エンドノード間の等価な通信経路が2つあり, それぞれSLとLLに割り当てている. 
-それぞれのレーンに対し通信負荷を与えることで経路の状況を変化させる. 
-SLに対する通信負荷には, 64KBのフローを200msに1回ポアソン生起するトラフィックを用いる. 
-LLに対する通信負荷には, 実験時間中継続してデータ転送を行うトラフィックを用いる. 
-それぞれの通信負荷については, Senderノードの数を変化させ, 負荷の度合いに対する評価を行う. 
-なお, パラメータ$t_{deadline}$は$300[ms]$を設定している. 
-
-経路状況に対する挙動に関わるパラメータ$\alpha,
-\beta$を変化させたときの経路切替時間の移り変わりをFig.\ref{fig:basic_para_link}に示し, 横軸はSL,
-LLへの通信負荷の強度を表すSenderノードの数, 縦軸には通信が発生したときの時間を0としたときの経路切替時間を示している. 
-この結果から, パラメータ$\alpha$が大きくなればなるほど, 経路状況の変化にアグレッシブに反応し, また値が小さいと
-パラメータ$t_{deadline}$の影響を大きく受けることとなり, 設計目的の期待の狙い通りの結果が得られた. 
-実際, SLでのSenderノードが増えれば増えるほど, SLでのキューイング遅延が大きくなり, SLのリンクコストの値が大きくなる. 
-これは, SLで通信をするよりもLLで通信を行ったほうが有利であると判断された結果であり, このため切替時間が短くなる. 
-また, LLでのSenderノードが増えれば増えるほど, LLでのキューイング遅延が大きくなり, LLのリンクコストが大きくなる. 
-これは, LLへ切り替えて通信するよりもSLに留まって通信を継続した方が有利であると判断された結果であり, このため切替時間が長くなる. 
-
-\begin{figure}[t]
-    \begin{center}
-    \includegraphics[autoebb, width=300pt]{./img/basic_cost.pdf}
-    \caption{Basic performance path switching based on
-    link-cost}
-    %\ecaption{The control loop in DCTCP}
-    \label{fig:basic_para_link}
-    \end{center}
-\end{figure}
-
-
-次にデッドラインに対する挙動に関わるパラメータ$\gamma,
-\delta$を変化させたときの経路切替時間の移り変わりをFig.\ref{fig:basic_para_dead}に示す.
-この結果から, パラメータ$\gamma$が大きくなればなるほど, 経路状況よりも$t_{deadline}$に大きく依存することとなり,
-設計の狙い通りの結果が得られた.
-実際, LLでのSenderノードが増えれば増えるほど, LLでのキューイング遅延が大きくなり, SLに留まるような判断がされるが,
-$t_{deadline}$を超えれば経路切替が発生しやすくなるような挙動をする.
-そのため, 切替時間が$t_{deadline}$を大きく超えるような挙動は発生しない. 
-
-\begin{figure}[t]
-    \begin{center}
-    \includegraphics[autoebb, width=300pt]{./img/basic_cost.pdf}
-    \caption{Basic performance path switching based on
-    link-cost}
-    %\ecaption{The control loop in DCTCP}
-    \label{fig:basic_para_dead}
-    \end{center}
-\end{figure}
 
 \section{性能障害:Queue buildupに対する性能評価}
 次に$\S$\ref{sec:expected_effect}にて示した, Queue buildupに対する評価を行う. 
@@ -250,7 +188,7 @@ Fig.\ref{fig:eval2_aver}にQueue buildupでの64KBショートフローの平均
 
 \begin{figure}[t]
     \begin{center}
-    \includegraphics[autoebb, width=300pt]{./img/eval2_avr.pdf}
+    \includegraphics[autoebb, width=250pt]{./img/eval2_avr.pdf}
     \caption{Short flows average FCT in Queue buidup}
     %\ecaption{The control loop in DCTCP}
     \label{fig:eval2_aver}
@@ -292,6 +230,7 @@ SLの経路状況はLLよりも悪化していると考えられる.
 
 
 \section{実環境でのトラフィックを想定した性能評価}
+\label{sec:real_traffic}
 最後に, 実際のデータセンター環境を想定した評価実験を行った. 
 この評価ではトポロジーとして, k=4 DHFTを用いる. 
 このトポロジーでは, エンドノード間の2つの等価な通信経路にそれぞれSLとLLに割り当てている.
@@ -428,6 +367,35 @@ Fig.\ref{fig:datamining_FCT_tails}にデータマイ二ングトラフィック�
     \end{center}
 \end{figure}
 
+\section{ロングフローに対する影響}
+今回の提案手法では, ロングフローとショートフローを区別して通信を行うことで,
+ショートフローに対するキューイング遅延の影響を抑えFCTを改善するものであった. 
+従来ではすべてのフローが公平に扱われるがため, 同一の経路を共有し, ショートフローに対して遅延が生じていた. 
+この時, 競合したロングフローに対してもやはり, 通信性能の劣化があり, その結果スループットを落としていた\cite{mptcp_ana2}. 
+しかし, 提案したデータセンターレーンモデルによって, フロー指向毎に切り分けて通信することができるようになったため, ショートフローだけでなく,
+ロングフローに対しても改善が期待できる. 
+そこで, $\S$\ref{sec:real_traffic}のウェブ検索トラフィックにおけるバックエンドノードへのトラフィックに対し,
+各フローのスループットを測定した. 
+Fig.\ref{fig:websearch_longflow}にその結果を示す. 
+縦軸は各フローのスループットを1経路の帯域で正規化したリンク利用率, 横軸はバックエンドノードに対する通信負荷の割合$Load$を示している. 
+RepFlowはその手法の特性上, 複製されたショートフローがロングフローに対してリンクを共有することで通信性能を劣化させてしまう. 
+一方で, 提案手法ではデータセンターレーンモデルによって, ショートフローと経路を共有することはないため,
+通信負荷の増加に伴い他のロングフローによる影響はあるものの, RepFlowと比べるとその影響は小さい. 
+また提案手法ではSLとLLそれぞれ1経路分の通信性能しか期待できないため,
+通信開始当初にショートフローによる影響を受けたDeadlineベースの切替手法と比べ, 2経路riyoudekiru 
+Pure-MPTCPではより大きなスループットを達成している. 
+リンクコストベースの切替手法では, 通信状況に応じ, そのフローが通信するのに有利な選択を行うことができる.
+そのためロングフローにおいても通信性能の改善が見られた. 
+
+\begin{figure}[t]
+    \begin{center}
+    \includegraphics[autoebb, width=250pt]{./img/link_utilization.pdf}
+    \caption{Link utilizatiin of long flow for back-end nodes in Websearch
+    workload}
+    %\ecaption{The control loop in DCTCP}
+    \label{fig:websearch_longflow}
+    \end{center}
+\end{figure}
 
 \section{まとめ}
 データセンターレーンモデルでは,

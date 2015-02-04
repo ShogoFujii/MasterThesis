@@ -92,7 +92,7 @@ with path switching by Multipath TCP}
 Department of Electrical Engineering and Information Systems}
 \id{37-136482}
 \chosha{藤居 翔吾}
-\author{Fujii Shogo}
+\author{Shogo Fujii}
 \submission{平成26年 2月5日 提出}
 \teacher{関谷 勇司}
 
@@ -230,13 +230,15 @@ http://lwn.net/Articles/381955/.}
 \bibitem{RPS}{Herbert, T. rps: receive packet steering, september 2010.
 \url{http://lwn.net/Articles/361440/.}}
 \bibitem{mptcp_linux}{ip networking lab「MultiPath TCP - Linux Kernel
-implementation」\url{http://mptcp.info.ucl.ac.be/}} \bibitem{rtt}{Vasudevan, Vijay, et al. "Safe and effective fine-grained TCP
+implementation」\url{http://mptcp.info.ucl.ac.be/}} 
+\bibitem{rtt}{Vasudevan, Vijay, et al. "Safe and effective fine-grained TCP
 retransmissions for datacenter communication." ACM SIGCOMM Computer Communication Review. Vol. 39. No. 4. ACM, 2009.}
 \bibitem{mptcp_ana}{藤居 翔吾, 田崎 創, 関谷 勇司, "MultiPath TCP
 適用時のデータセンターネットワークでのフローサイズが与える影響に関する一考察", 電子情報通信学会, 信学技法, vol. 113, no. 364,
 IA2013-65, pp. 47-52, 2013.}
-\bibitem{mptcp_ana2}{藤居 翔吾, 田崎 創, 関谷 勇司, "MultiPath TCP
-適用時のデータセンターネットワークでのフローサイズが与える影響に関する一考察", インターネットカンファレンス2014}
+\bibitem{mptcp_ana2}{藤居翔吾, 田崎創, 関谷勇司, "MultiPath TCP 適用時のデータセンター
+ネットワークでのフローサイズが与える影響に関する一考察", 日本ソフトウェア科学会研究会資料シリーズ No.74 ISSN1341-870X,
+インターネットコンファレス2014論文集, pp33-42 } 
 \bibitem{flexible}{P. Agarwal, B. Kwan, and L. Ashvin. Flexible buffer allocation entities for
 traffic aggregate containment. US Patent 20090207848, August 2009.}
 \bibitem{synchro}{S. Floyd and V. Jacobson. The synchronization of periodic routing messages.
@@ -324,19 +326,23 @@ in communication networks using adaptive kalman filtering." (2004).}
 \bibitem{queue_delay}{Angrisani, Leopoldo, et al. "Measurement of processing and
 queuing delays introduced by an open-source router in a single-hop network."
 Instrumentation and Measurement, IEEE Transactions on 55.4 (2006): 1065-1076.}
+\bibitem{trouble}{DEAN, J. Software engineering advice from building large-scale distributed systems. http://research.google.com/people/jeff/stanford-295-talk.pdf.
+}
+\bibitem{openflow}{McKeown, Nick, et al. "OpenFlow: enabling innovation in
+campus networks." ACM SIGCOMM Computer Communication Review 38.2 (2008): 69-74.}
 \end{thebibliography}
 \clearpage
 \def\thesection{}
 \def\thesubsection{\Alph{subsection}}
 \def\thesection{付録\Alph{section}}
 \setcounter{subsection}{0}
-\appendix*
+\appendix
 \section{リンクパフォーマンス関数:Davidson関数}
 リンクパフォーマンス関数は, ネットワークを構成する個々のリンクのサービス水準をリンク交通量とリンク属性の関数として表したものである. 
 本研究では, リンクのサービス水準には, フロー完結時間(旅行時間)を用いている. 
 リンクパフォーマンス関数は, 狭義の増加関数である必要があり, このことは待ち行列理論を用いて説明することができる. 
 
-今, M/M/1($infty$)の待ち行列理論を考える. 
+今, M/M/1($\infty$)の待ち行列理論を考える. 
 この時, 到着率$\lambda$, サービス率$\mu$を用いて利用率$\rho$は以下のように表される. 
 
 \begin{equation}

@@ -38,18 +38,23 @@
 \contentsline {figure}{\numberline {6.1}{\ignorespaces Basic performance comparisons}}{57}
 \contentsline {figure}{\numberline {6.2}{\ignorespaces Basic performance path switching based on deadline}}{57}
 \contentsline {figure}{\numberline {6.3}{\ignorespaces Basic performance path switching based on link-cost}}{58}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Basic performance path switching based on link-cost}}{59}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Basic performance path switching based on link-cost}}{59}
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Topolgy for impairment of Queue buildup evaluation}}{60}
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Short flows average FCT in Queue buidup}}{61}
-\contentsline {figure}{\numberline {6.8}{\ignorespaces Short flows $95^{th}$ FCT in Queue buidup}}{62}
-\contentsline {figure}{\numberline {6.9}{\ignorespaces Web search workload}}{63}
-\contentsline {figure}{\numberline {6.10}{\ignorespaces Data mining workload}}{63}
-\contentsline {figure}{\numberline {6.11}{\ignorespaces Short flows(0,100KB] average FCT in Websearch workload}}{64}
-\contentsline {figure}{\numberline {6.12}{\ignorespaces Short flows(0,100KB] $99^{th}$ FCT in Websearch workload}}{65}
-\contentsline {figure}{\numberline {6.13}{\ignorespaces Short flows(0,100KB] average FCT in Datamining workload}}{66}
-\contentsline {figure}{\numberline {6.14}{\ignorespaces Short flows(0,100KB] $99^{th}$ FCT in Datamining workload}}{66}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Topolgy for impairment of Queue buildup evaluation}}{59}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Short flows average FCT in Queue buidup}}{60}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Short flows $95^{th}$ FCT in Queue buidup}}{61}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Web search workload}}{62}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Data mining workload}}{62}
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Short flows(0,100KB] average FCT in Websearch workload}}{63}
+\contentsline {figure}{\numberline {6.10}{\ignorespaces Short flows(0,100KB] $99^{th}$ FCT in Websearch workload}}{64}
+\contentsline {figure}{\numberline {6.11}{\ignorespaces Short flows(0,100KB] average FCT in Datamining workload}}{65}
+\contentsline {figure}{\numberline {6.12}{\ignorespaces Short flows(0,100KB] $99^{th}$ FCT in Datamining workload}}{65}
+\contentsline {figure}{\numberline {6.13}{\ignorespaces Link utilizatiin of long flow for back-end nodes in Websearch workload}}{67}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Current cost estimation vs. maximum possible number of hosts}}{69}
-\contentsline {figure}{\numberline {7.2}{\ignorespaces Techinical problem of creating subflow without complete paired IP addressses}}{71}
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Basic performance path switching based on link-cost according each parameter $\alpha $}}{69}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Basic performance path switching based on link-cost according each parameter $\gamma $}}{70}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Basic performance comparisons with 2 SLs and a LL}}{72}
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Basic performance comparisons with 4paths}}{72}
+\contentsline {figure}{\numberline {7.5}{\ignorespaces k=4 Multi-homing in the FatTree Topology}}{74}
+\contentsline {figure}{\numberline {7.6}{\ignorespaces Current cost estimation vs. maximum possible number of hosts}}{75}
+\contentsline {figure}{\numberline {7.7}{\ignorespaces Techinical problem of creating subflow without complete paired IP addressses}}{76}
+\contentsline {figure}{\numberline {7.8}{\ignorespaces Effect of the load balancing by simple idea with Round-Robin alghorithm}}{77}
 \addvspace {10\p@ }

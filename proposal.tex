@@ -7,7 +7,7 @@
 長時間継続的にデータを転送し続けるトラフィックが通信している中でのサイズ小さいフロー通信に対する低遅延通信を達成することを目指す.
 この目的を達成するために, 提案手法では指向が異なるフローを区別する制御を行うことで, レイテンシ指向なフローについてキューイング遅延を小さくする通信を行う.
 
-\section{Motivation}
+\section{提案手法へのモチベーション}
 提案手法の動機となったのは, MPTCPを用いたデータセンターネットワークモデルである\cite{improving}.
 今日のデータセンターネットワークは, FatTreeトポロジーやClosトポロジーに基づいた構成になっており\cite{dctcp, vl2},
 等コストな経路が複数存在している. 
@@ -87,7 +87,7 @@ RepFlowでは, ショートフローに対して同一の通信を複製する�
 そこで本研究では, あらかじめ通信経路を決定するために, データセンターネットワーク内に指向毎にレーンを設けるデータセンターレーンモデルと,
 フローの指向を区別し, それぞれの経路を切り替えるためのアルゴリズムを提案する. 
 
-\section{Design}
+\section{経路状況を考慮した経路切替による負荷分散手法の提案}
 本節では, 本研究における位置付けの下で, 指向毎にフローを区別し, それぞれの経路に切り替えて通信を行うことを実現するため,
 データセンターレーンモデルと経路状況を考慮した経路切替アルゴリズムを提案する. 
 
@@ -132,7 +132,7 @@ FatTree)トポロジーが提案されている\cite{improving}.
 
 \begin{figure}[t]
     \begin{center}
-    \includegraphics[autoebb, width=250pt]{./img/mhft.pdf}
+    \includegraphics[autoebb, width=250pt]{./img/dhft.pdf}
     \caption{k=4 Dual-homing in the FatTree Topology}
     %\ecaption{The control loop in DCTCP}
     \label{fig:dual-homing}
@@ -386,11 +386,10 @@ or SL)
 \end{algorithmic}
 \end{algorithm}
 
-\section{Discussion}
+\section{提案手法の動作}
 
 \subsection{利点}
-提案手法は, $\S$\ref{sec:expected_effect}に示す性能障害を次のように解決する. \\
-{\bf Queue buildup}\\
+提案手法は, $\S$\ref{sec:expected_effect}に示す{\bf Queue buildup}性能障害を次のように解決する. 
 提案手法では, デッドライン時間, リンクコスト値を用いてロングフローであると判定された場合, 速やかにSLへとトラフィックが移行する. 
 これにより, SLはレイテンシ指向なショートフローに対して, 通信経路を良好な状態に保つことができ, FCTを短縮化される. 
 また, ロングフローに対しても, ショートフローによって輻輳状態となったLLを避けて通信することができるため, スループットの改善が期待できる. 

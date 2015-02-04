@@ -74,16 +74,21 @@
 \contentsline {subsection}{\numberline {6.1.1}評価メトリック}{55}
 \contentsline {subsection}{\numberline {6.1.2}比較対象}{55}
 \contentsline {section}{\numberline {6.2}基本性能:スループット}{56}
-\contentsline {section}{\numberline {6.3}基本性能:切替時間}{57}
-\contentsline {section}{\numberline {6.4}性能障害:Queue buildupに対する性能評価}{59}
-\contentsline {section}{\numberline {6.5}実環境でのトラフィックを想定した性能評価}{62}
+\contentsline {section}{\numberline {6.3}性能障害:Queue buildupに対する性能評価}{57}
+\contentsline {section}{\numberline {6.4}実環境でのトラフィックを想定した性能評価}{61}
+\contentsline {section}{\numberline {6.5}ロングフローに対する影響}{66}
 \contentsline {section}{\numberline {6.6}まとめ}{66}
 \contentsline {chapter}{\numberline {第7章}考察}{68}
-\contentsline {section}{\numberline {7.1}MPTCPを有効活用するトポロジーに関する考察}{68}
-\contentsline {section}{\numberline {7.2}レーンモデルに対する考察}{69}
-\contentsline {section}{\numberline {7.3}リンクコストベースの切替手法のパラメータに関する考察}{69}
-\contentsline {section}{\numberline {7.4}MPTCPアドレスペアの問題に関する考察}{70}
-\contentsline {section}{\numberline {7.5}Incast問題に対する考察}{71}
-\contentsline {chapter}{\numberline {第8章}結論}{72}
-\contentsline {chapter}{参考文献}{76}
-\contentsline {section}{\numberline {付録A}リンクパフォーマンス関数:Davidson関数}{81}
+\contentsline {section}{\numberline {7.1}提案手法についての考察}{68}
+\contentsline {subsection}{\numberline {7.1.1}リンクコストパラメータに関する考察}{68}
+\contentsline {section}{\numberline {7.2}実験環境についての考察}{71}
+\contentsline {subsection}{\numberline {7.2.1}データセンタレーンモデルに対する考察}{71}
+\contentsline {subsection}{\numberline {7.2.2}MPTCPを有効活用するトポロジーに関する考察}{72}
+\contentsline {section}{\numberline {7.3}実環境への適用に関する考察}{74}
+\contentsline {subsection}{\numberline {7.3.1}MPTCPアドレスペアの問題に関する考察}{74}
+\contentsline {section}{\numberline {7.4}今後の課題について}{75}
+\contentsline {subsection}{\numberline {7.4.1}Incast問題に対する考察}{76}
+\contentsline {subsection}{\numberline {7.4.2}実環境における適用, 運用に関する考察}{77}
+\contentsline {chapter}{\numberline {第8章}結論}{79}
+\contentsline {chapter}{参考文献}{83}
+\contentsline {section}{\numberline {付録A}リンクパフォーマンス関数:Davidson関数}{89}
