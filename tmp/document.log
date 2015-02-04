@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.14159265-p3.5-u1.11-130605-2.6 (utf8.uptex) (TeX Live 2014) (preloaded format=uplatex 2014.12.20)  26 JAN 2015 17:09
+This is e-upTeX, Version 3.14159265-p3.5-u1.11-130605-2.6 (utf8.uptex) (TeX Live 2014) (preloaded format=uplatex 2014.12.20)  4 FEB 2015 21:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -366,11 +366,8 @@ Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
 
 
 Writing index file document.idx
-(./document.aux (./introduction.aux) (./related_work.aux
-
-LaTeX Warning: Label `fig:repflow_scheario' multiply defined.
-
-) (./datacenter_network.aux) (./motivated_work.aux
+(./document.aux (./introduction.aux) (./related_work.aux)
+(./datacenter_network.aux) (./motivated_work.aux
 
 LaTeX Warning: Label `sec:analysis' multiply defined.
 
@@ -385,34 +382,34 @@ LaTeX Warning: Label `mywork_2' multiply defined.
 ) (./thanks.aux))
 \openout1 = `document.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for JY2/mc/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for JT2/mc/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for JY2/mc/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for JT2/mc/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 19.17792pt on input line 105.
+(Font)              scaled to size 19.17792pt on input line 106.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 19.17792pt on input line 105.
+(Font)              scaled to size 19.17792pt on input line 106.
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 15.9785pt on input line 105.
+(Font)              scaled to size 15.9785pt on input line 106.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 15.9785pt on input line 105.
+(Font)              scaled to size 15.9785pt on input line 106.
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 13.31541pt on input line 105.
+(Font)              scaled to size 13.31541pt on input line 106.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 13.31541pt on input line 105.
+(Font)              scaled to size 13.31541pt on input line 106.
  [1
 
 ]
@@ -432,25 +429,25 @@ LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
 
 ]
 LaTeX Font Info:    Font shape `JT2/mc/bx/n' in size <10> not available
-(Font)              Font shape `JT2/gt/m/n' tried instead on input line 122.
+(Font)              Font shape `JT2/gt/m/n' tried instead on input line 152.
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 9.24683pt on input line 122.
+(Font)              scaled to size 9.24683pt on input line 152.
 LaTeX Font Info:    Font shape `JY2/mc/bx/n' in size <10> not available
-(Font)              Font shape `JY2/gt/m/n' tried instead on input line 122.
+(Font)              Font shape `JY2/gt/m/n' tried instead on input line 152.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 9.24683pt on input line 122.
+(Font)              scaled to size 9.24683pt on input line 152.
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 23.0061pt on input line 122.
+(Font)              scaled to size 23.0061pt on input line 152.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 23.0061pt on input line 122.
+(Font)              scaled to size 23.0061pt on input line 152.
 LaTeX Font Info:    Font shape `JT2/mc/bx/n' in size <24.88> not available
-(Font)              Font shape `JT2/gt/m/n' tried instead on input line 122.
+(Font)              Font shape `JT2/gt/m/n' tried instead on input line 152.
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 23.0061pt on input line 122.
+(Font)              scaled to size 23.0061pt on input line 152.
 LaTeX Font Info:    Font shape `JY2/mc/bx/n' in size <24.88> not available
-(Font)              Font shape `JY2/gt/m/n' tried instead on input line 122.
+(Font)              Font shape `JY2/gt/m/n' tried instead on input line 152.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 23.0061pt on input line 122.
+(Font)              scaled to size 23.0061pt on input line 152.
  (./document.toc
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
 (Font)              scaled to size 6.47278pt on input line 2.
@@ -500,10 +497,10 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 
 
 ]
-\openout2 = `proposal.aux'.
+\openout2 = `introduction.aux'.
 
- (./proposal.tex
-第5章
+ (./introduction.tex
+第1章
 LaTeX Font Info:    Font shape `JT2/mc/bx/n' in size <20.74> not available
 (Font)              Font shape `JT2/gt/m/n' tried instead on input line 1.
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
@@ -513,67 +510,270 @@ LaTeX Font Info:    Font shape `JY2/mc/bx/n' in size <20.74> not available
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
 (Font)              scaled to size 19.17792pt on input line 1.
 LaTeX Font Info:    Font shape `JT2/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JT2/gt/m/n' tried instead on input line 11.
+(Font)              Font shape `JT2/gt/m/n' tried instead on input line 3.
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 13.31541pt on input line 11.
+(Font)              scaled to size 13.31541pt on input line 3.
 LaTeX Font Info:    Font shape `JY2/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JY2/gt/m/n' tried instead on input line 11.
+(Font)              Font shape `JY2/gt/m/n' tried instead on input line 3.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 13.31541pt on input line 11.
-[40
+(Font)              scaled to size 13.31541pt on input line 3.
+[1
 
 
 
 
+] [2] [3]) [4]
+\openout2 = `related_work.aux'.
 
+ (./related_work.tex
+第2章
+LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
+(Font)              scaled to size 5.5481pt on input line 17.
+LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
+(Font)              scaled to size 7.39746pt on input line 17.
+LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
+(Font)              scaled to size 5.5481pt on input line 17.
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--30
+[]\OT1/cmr/m/n/8 Prioritizing
+ []
+
+
+Underfull \hbox (badness 1137) in paragraph at lines 31--31
+[]\OT1/cmr/m/n/8 Flow dead-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--43
+[]\OT1/cmr/m/n/8 Application
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--44
+[]|\OT1/cmr/m/n/8 mean
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--56
+[]|\OT1/cmr/m/n/8 mean
+ []
+
+LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
+(Font)              scaled to size 8.32214pt on input line 70.
+LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
+(Font)              scaled to size 8.32214pt on input line 70.
+[5
 
 
 
 ]
-File: ./img/test.pdf Graphic file (type pdf)
- <./img/test.pdf>
-LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 8.32214pt on input line 44.
-LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 8.32214pt on input line 44.
- [41] [42]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 111.
+File: ./img/DCTCP.pdf Graphic file (type pdf)
+ <./img/DCTCP.pdf> [6] [7] [8] [9]
+File: ./img/fair_share.pdf Graphic file (type pdf)
+ <./img/fair_share.pdf>
+LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
+(Font)              scaled to size 8.32214pt on input line 235.
+ [10] [11] [12]
+File: ./img/detal.pdf Graphic file (type pdf)
+
+<./img/detal.pdf> [13]
+File: ./img/repflow_ie.pdf Graphic file (type pdf)
+ <./img/repflow_ie.pdf>
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 386.
 
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 111.
-File: ./img/test.pdf Graphic file (type pdf)
- <./img/test.pdf>
-[43] [44]
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 386.
+) [14] [15]
+\openout2 = `datacenter_network.aux'.
+
+
+(./datacenter_network.tex
+第3章
+File: ./img/hierarchy_topology.pdf Graphic file (type pdf)
+<./img/hierarchy_topology.pdf>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: ./img/fattree_topology.pdf Graphic file (type pdf)
+<./img/fattree_topology.pdf>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: ./img/bcube.pdf Graphic file (type pdf)
+<./img/bcube.pdf>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[16
+
+
+
+] [17]
+Overfull \hbox (7.84976pt too wide) in paragraph at lines 105--108
+[]
+ []
+
+[18]
+LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
+(Font)              scaled to size 6.47278pt on input line 122.
+LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
+(Font)              scaled to size 5.5481pt on input line 123.
+ [19]
 LaTeX Font Info:    Font shape `JT2/mc/m/it' in size <10> not available
-(Font)              Font shape `JT2/mc/m/n' tried instead on input line 204.
+(Font)              Font shape `JT2/mc/m/n' tried instead on input line 167.
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 9.24683pt on input line 204.
+(Font)              scaled to size 9.24683pt on input line 167.
 LaTeX Font Info:    Font shape `JY2/mc/m/it' in size <10> not available
-(Font)              Font shape `JY2/mc/m/n' tried instead on input line 204.
+(Font)              Font shape `JY2/mc/m/n' tried instead on input line 167.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 9.24683pt on input line 204.
- [45]
-File: ./img/test.pdf Graphic file (type pdf)
- <./img/test.pdf> [46] [47]
+(Font)              scaled to size 9.24683pt on input line 167.
+ [20] [21] [22]
+File: ./img/OLDI.pdf Graphic file (type pdf)
+ <./img/OLDI.pdf>) [23]
+\openout2 = `motivated_work.aux'.
 
-LaTeX Warning: Reference `sec:eval' on page 48 undefined on input line 326.
+ (./motivated_work.tex
+第4章
+[24
 
+
+
+]
+File: ./img/pure_query.pdf Graphic file (type pdf)
+ <./img/pure_query.pdf>
+File: ./img/mix_query.pdf Graphic file (type pdf)
+ <./img/mix_query.pdf> [25]
+File: ./img/mix_short.pdf Graphic file (type pdf)
+ <./img/mix_short.pdf>
+[26]
+File: ./img/fattree_rep.pdf Graphic file (type pdf)
+ <./img/fattree_rep.pdf> [27]
+File: ./img/flow_comp.pdf Graphic file (type pdf)
+ <./img/flow_comp.pdf> [28] [29]
+File: ./img/full_intensive.pdf Graphic file (type pdf)
+
+<./img/full_intensive.pdf>
+File: ./img/flow_comp.pdf Graphic file (type pdf)
+ <./img/flow_comp.pdf> [30]
+File: ./img/cdf_rep.pdf Graphic file (type pdf)
+ <./img/cdf_rep.pdf>
+[31]
+File: ./img/constant.pdf Graphic file (type pdf)
+ <./img/constant.pdf>
+File: ./img/constant_cdf.pdf Graphic file (type pdf)
+ <./img/constant_cdf.pdf>
+File: ./img/constant_conc.pdf Graphic file (type pdf)
+ <./img/constant_conc.pdf>
+[32]
+File: ./img/job.pdf Graphic file (type pdf)
+ <./img/job.pdf>
+File: ./img/job_cdf.pdf Graphic file (type pdf)
+ <./img/job_cdf.pdf>
+File: ./img/job_conc.pdf Graphic file (type pdf)
+ <./img/job_conc.pdf> [33] [34]
+File: ./img/impairments.pdf Graphic file (type pdf)
+
+<./img/impairments.pdf> [35] [36]
+File: ./img/topology_ns3.pdf Graphic file (type pdf)
+ <./img/topology_ns3.pdf>
+File: ./img/topology_real.pdf Graphic file (type pdf)
+
+<./img/topology_real.pdf> [37] [38]
+File: ./img/switch_verif.pdf Graphic file (type pdf)
+ <./img/switch_verif.pdf>
+File: ./img/real_eth0.pdf Graphic file (type pdf)
+
+<./img/real_eth0.pdf> [39] [40]
+File: ./img/load_test.pdf Graphic file (type pdf)
+ <./img/load_test.pdf>) [41]
+\openout2 = `proposal.aux'.
+
+ (./proposal.tex
+第5章
+[42
+
+
+
+]
+File: ./img/schenario.pdf Graphic file (type pdf)
+ <./img/schenario.pdf> [43] [44]
+File: ./img/mhft.pdf Graphic file (type pdf)
+ <./img/mhft.pdf> [45] [46]
+File: ./img/lane_model.pdf Graphic file (type pdf)
+
+<./img/lane_model.pdf> [47] [48] [49] [50]
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 6.47278pt on input line 375.
-LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 4.62341pt on input line 375.
-[48] [49]
-Overfull \hbox (10.61809pt too wide) in paragraph at lines 424--438
+(Font)              scaled to size 4.62341pt on input line 353.
+ [51] [52]) [53]
+\openout2 = `evaluation.aux'.
+
+ (./evaluation.tex
+第6章
+[54
+
+
+
+] [55]
+File: ./img/basic_comp.pdf Graphic file (type pdf)
+ <./img/basic_comp.pdf>
+File: ./img/basic_dead.pdf Graphic file (type pdf)
+ <./img/basic_dead.pdf>
+File: ./img/basic_cost.pdf Graphic file (type pdf)
+ <./img/basic_cost.pdf>
+[56] [57]
+File: ./img/basic_cost.pdf Graphic file (type pdf)
+ <./img/basic_cost.pdf>
+File: ./img/basic_cost.pdf Graphic file (type pdf)
+ <./img/basic_cost.pdf> [58] [59]
+File: ./img/evalu2.pdf Graphic file (type pdf)
+
+<./img/evalu2.pdf> [60]
+File: ./img/eval2_avr.pdf Graphic file (type pdf)
+ <./img/eval2_avr.pdf> [61]
+File: ./img/eval2_tail.pdf Graphic file (type pdf)
+ <./img/eval2_tail.pdf>
+[62]
+File: ./img/websearch.pdf Graphic file (type pdf)
+ <./img/websearch.pdf>
+File: ./img/datamining.pdf Graphic file (type pdf)
+ <./img/datamining.pdf> [63]
+File: ./img/websearch_avr.pdf Graphic file (type pdf)
+
+<./img/websearch_avr.pdf> [64]
+File: ./img/websearch_tail.pdf Graphic file (type pdf)
+ <./img/websearch_tail.pdf>
+File: ./img/mining_avr.pdf Graphic file (type pdf)
+
+<./img/mining_avr.pdf>
+File: ./img/mining_tail.pdf Graphic file (type pdf)
+ <./img/mining_tail.pdf> [65] [66]) [67]
+\openout2 = `consideration.aux'.
+
+
+(./consideration.tex
+第7章
+
+LaTeX Warning: Reference `fig:multi-homing' on page 68 undefined on input line 
+6.
+
+[68
+
+
+
+]
+File: ./img/mhft_cost.pdf Graphic file (type pdf)
+ <./img/mhft_cost.pdf> [69]
+Overfull \hbox (10.61809pt too wide) in paragraph at lines 87--101
 \OT1/cmr/m/n/10 ($\OML/cmm/m/it/10 F\OT1/cmr/m/n/10 2[]\OML/cmm/m/it/10 ; F\OT1
 /cmr/m/n/10 3[]\OML/cmm/m/it/10 ; F\OT1/cmr/m/n/10 4[]$)
  []
 
 
-Underfull \hbox (badness 1199) in paragraph at lines 424--438
+Underfull \hbox (badness 1199) in paragraph at lines 87--101
 \JY2/mc/m/n/10 フロ ー $\OML/cmm/m/it/10 F\OT1/cmr/m/n/10 3$ \JY2/mc/m/n/10 
 は\OT1/cmr/m/n/10 , $\OML/cmm/m/it/10 Data \OT1/cmr/m/n/10 : \OML/cmm/m/it/10 
 S\OT1/cmr/m/n/10 1 \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 S\OT1/cmr/m/n/10 3 \OM
@@ -584,66 +784,87 @@ n/10 4$, \JY2/mc/m/n/10 フロ ー $\OML/cmm/m/it/10 F\OT1/cmr/m/n/10 4$ \JY2/m
 c/m/n/10 は\OT1/cmr/m/n/10 ,
  []
 
-[50]
-File: ./img/test.pdf Graphic file (type pdf)
- <./img/test.pdf> [51]
-File: ./img/test.pdf Graphic file (type pdf)
- <./img/test.pdf> [52]) [53]
-Underfull \hbox (badness 10000) in paragraph at lines 167--170
+File: ./img/pair_problem.pdf Graphic file (type pdf)
+<./img/pair_problem.pdf> [70]) [71]
+\openout2 = `conclusion.aux'.
+
+ (./conclusion.tex
+第8章
+) [72
+
+
+
+] [73]
+\openout2 = `my_work.aux'.
+
+ (./my_work.tex) [74
+
+
+
+]
+\openout2 = `thanks.aux'.
+
+ (./thanks.tex) [75
+
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 197--200
 []\OT1/cmr/m/n/10 Jim Lid-dle. Ama-zon found ev-ery 100ms of la-tency cost them
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 167--170
+Underfull \hbox (badness 10000) in paragraph at lines 197--200
 \OT1/cmr/m/n/10 1% in sales, Au-gust 2008. $\OT1/cmtt/m/n/10 http : / / blog . 
 gigaspaces . com /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 175--178
+Underfull \hbox (badness 10000) in paragraph at lines 205--208
 []\OT1/cmr/m/n/10 Facebook. Presto: In-ter-act-ing with petabytes of data at Fa
 ce-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 175--178
+Underfull \hbox (badness 10000) in paragraph at lines 205--208
 \OT1/cmr/m/n/10 book, $\OT1/cmtt/m/n/10 https : / / www . facebook . com / note
 s / facebook-[]engineering /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 175--178
+Underfull \hbox (badness 10000) in paragraph at lines 205--208
 \OT1/cmtt/m/n/10 presto-[]interacting-[]with-[]petabytes-[]of-[]data-[]at-[]fac
 ebook /
  []
 
-[59
-
-
-
-
-
+[76
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 198--200
+Underfull \hbox (badness 10000) in paragraph at lines 228--230
 []\OT1/cmr/m/n/10 Herbert, T. rfs: re-ceive flow steer-ing, septem-ber 2010.
  []
 
 
-Underfull \hbox (badness 1442) in paragraph at lines 200--202
+Underfull \hbox (badness 1442) in paragraph at lines 230--232
 []\OT1/cmr/m/n/10 Herbert, T. rps: re-ceive packet steer-ing, septem-ber 2010. 
 $\OT1/cmtt/m/n/10 http : / / lwn . net /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 217--219
+Underfull \hbox (badness 10000) in paragraph at lines 247--249
 []\OT1/cmr/m/n/10 intel, $\OT1/cmtt/m/n/10 http : / / www . intel . com / conte
 nt / www / us / en / network-[]adapters /
  []
 
-[60] [61] [62] [63
+[77] [78]
+Underfull \hbox (badness 10000) in paragraph at lines 301--304
+\OT1/cmtt/m/n/10 en / US / prod / collateral / switches / ps9441 / ps9670 / whi
+te _ paper _ c11-[]542809 .
+ []
+
+[79] [80] [81
 
 ] (./document.aux (./introduction.aux) (./related_work.aux)
 (./datacenter_network.aux) (./motivated_work.aux) (./proposal.aux)
@@ -657,12 +878,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3086 strings out of 493792
- 38754 string characters out of 6151490
- 154306 words of memory out of 5000000
- 6421 multiletter control sequences out of 15000+600000
- 19083 words of font info for 97 fonts, out of 8000000 for 9000
+ 3279 strings out of 493792
+ 41499 string characters out of 6151490
+ 333597 words of memory out of 5000000
+ 6532 multiletter control sequences out of 15000+600000
+ 26999 words of font info for 130 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 27i,16n,35p,5654b,576s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,16n,35p,28216b,580s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on document.dvi (26 pages, 91276 bytes).
+Output written on document.dvi (88 pages, 318636 bytes).

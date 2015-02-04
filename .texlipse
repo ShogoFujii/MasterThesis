@@ -1,5 +1,5 @@
 #TeXlipse project settings
-#Sat Dec 20 18:20:10 JST 2014
+#Mon Feb 02 14:13:07 JST 2015
 markTmpDer=true
 builderNum=4
 outputDir=
@@ -8,7 +8,7 @@ bibrefDir=
 outputFormat=pdf
 tempDir=tmp
 mainTexFile=document.tex
-outputFile=document.pdf
+outputFile=140205ShogoFujii.pdf
 langSpell=en
 markDer=true
 srcDir=

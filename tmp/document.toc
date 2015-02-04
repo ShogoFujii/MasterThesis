@@ -7,74 +7,83 @@
 \contentsline {section}{\numberline {2.1}キュー長の縮小}{5}
 \contentsline {subsection}{\numberline {2.1.1}DCTCP}{6}
 \contentsline {subsection}{\numberline {2.1.2}HULL}{7}
-\contentsline {section}{\numberline {2.2}再送の高速化}{7}
+\contentsline {section}{\numberline {2.2}再送の高速化}{8}
 \contentsline {subsection}{\numberline {2.2.1}DIBS}{8}
-\contentsline {subsection}{\numberline {2.2.2}FastLane, CP}{8}
+\contentsline {subsection}{\numberline {2.2.2}FastLane, CP}{9}
 \contentsline {section}{\numberline {2.3}ショートフローへの優先付け}{9}
 \contentsline {subsection}{\numberline {2.3.1}デッドラインベースの優先付け}{10}
-\contentsline {subsubsection}{$D^3$}{10}
+\contentsline {subsubsection}{${\rm D^3}$}{10}
 \contentsline {subsubsection}{PDQ}{10}
-\contentsline {subsubsection}{$D^{2}TCP$, MCP}{10}
-\contentsline {subsection}{\numberline {2.3.2}アプリケーションベースの優先付け}{11}
-\contentsline {subsubsection}{DeTail}{11}
-\contentsline {subsubsection}{pFabric}{12}
-\contentsline {subsection}{\numberline {2.3.3}複数経路の利用}{12}
+\contentsline {subsubsection}{${\rm D^{2}TCP}$, MCP}{11}
+\contentsline {subsection}{\numberline {2.3.2}アプリケーションベースの優先付け}{12}
 \contentsline {subsubsection}{DeTail}{12}
+\contentsline {subsubsection}{pFabric}{12}
+\contentsline {section}{\numberline {2.4}複数経路の利用}{12}
+\contentsline {subsubsection}{DeTail}{13}
 \contentsline {subsubsection}{RepFlow}{13}
-\contentsline {section}{\numberline {2.4}本研究の位置付け}{13}
-\contentsline {chapter}{\numberline {第3章}データセンターネットワーク}{15}
-\contentsline {section}{\numberline {3.1}トポロジー}{15}
-\contentsline {section}{\numberline {3.2}マルチパス, マルチホーミングを実現するプロトコル}{15}
-\contentsline {subsection}{\numberline {3.2.1}データリンク層におけるアプローチ}{16}
-\contentsline {subsubsection}{LACP}{16}
-\contentsline {subsection}{\numberline {3.2.2}トランスポート層におけるアプローチ}{17}
-\contentsline {subsubsection}{SCTP}{17}
-\contentsline {subsubsection}{Multipath TCP}{18}
-\contentsline {section}{\numberline {3.3}トラフィック}{19}
-\contentsline {section}{\numberline {3.4}アプリケーション}{20}
-\contentsline {chapter}{\numberline {第4章}Motivated work}{23}
-\contentsline {section}{\numberline {4.1}評価実験と考察}{23}
-\contentsline {subsection}{\numberline {4.1.1}想定環境}{23}
-\contentsline {subsection}{\numberline {4.1.2}シミュレーション結果}{24}
-\contentsline {subsubsection}{Query traffic}{24}
-\contentsline {subsubsection}{Short message traffic}{24}
-\contentsline {subsubsection}{Background traffic}{25}
-\contentsline {section}{\numberline {4.2}再現シミュレーション}{25}
-\contentsline {subsection}{\numberline {4.2.1}再現シミュレーション実験環境}{26}
-\contentsline {subsubsection}{設定パラメータに対する有効性の検証}{26}
-\contentsline {subsection}{\numberline {4.2.2}再現結果}{27}
+\contentsline {section}{\numberline {2.5}本研究の位置付け}{14}
+\contentsline {chapter}{\numberline {第3章}データセンターネットワーク}{16}
+\contentsline {section}{\numberline {3.1}トポロジー}{16}
+\contentsline {section}{\numberline {3.2}マルチパス, マルチホーミングを実現するプロトコル}{16}
+\contentsline {subsection}{\numberline {3.2.1}データリンク層におけるアプローチ}{17}
+\contentsline {subsubsection}{LACP}{17}
+\contentsline {subsection}{\numberline {3.2.2}トランスポート層におけるアプローチ}{18}
+\contentsline {subsubsection}{SCTP}{18}
+\contentsline {subsubsection}{Multipath TCP}{19}
+\contentsline {section}{\numberline {3.3}トラフィック}{20}
+\contentsline {section}{\numberline {3.4}アプリケーション}{21}
+\contentsline {chapter}{\numberline {第4章}Motivated work}{24}
+\contentsline {section}{\numberline {4.1}再現実験のための予備実験}{24}
+\contentsline {subsection}{\numberline {4.1.1}想定環境}{24}
+\contentsline {subsection}{\numberline {4.1.2}シミュレーション結果}{25}
+\contentsline {subsubsection}{Query traffic}{25}
+\contentsline {subsubsection}{Short message traffic}{26}
+\contentsline {section}{\numberline {4.2}再現シミュレーション}{27}
+\contentsline {subsection}{\numberline {4.2.1}再現シミュレーション実験環境}{27}
+\contentsline {subsubsection}{設定パラメータに対する有効性の検証}{28}
+\contentsline {subsection}{\numberline {4.2.2}再現結果}{28}
 \contentsline {subsection}{\numberline {4.2.3}考察}{28}
-\contentsline {subsubsection}{パケットロスが発生しないフローパターン}{28}
-\contentsline {subsubsection}{パケットロスが生じたフローパターン}{28}
-\contentsline {subsubsection}{TCP v.s. MPTCP}{29}
-\contentsline {section}{\numberline {4.3}実トラフィック解析}{29}
-\contentsline {subsection}{\numberline {4.3.1}性能障害}{33}
-\contentsline {subsubsection}{スイッチ - 性能障害}{33}
-\contentsline {subsubsection}{エンドノード - 性能障害}{34}
-\contentsline {section}{\numberline {4.4}検証実験}{35}
-\contentsline {subsection}{\numberline {4.4.1}実験環境}{35}
-\contentsline {subsection}{\numberline {4.4.2}実験結果}{35}
-\contentsline {subsection}{\numberline {4.4.3}考察}{37}
-\contentsline {subsection}{\numberline {4.4.4}Directing result}{38}
-\contentsline {chapter}{\numberline {第5章}提案手法}{40}
-\contentsline {section}{\numberline {5.1}Motivation}{40}
-\contentsline {section}{\numberline {5.2}本研究の位置付け}{41}
-\contentsline {section}{\numberline {5.3}Design}{42}
-\contentsline {subsection}{\numberline {5.3.1}データセンターレーンモデル}{42}
-\contentsline {subsubsection}{BackGround}{43}
-\contentsline {subsubsection}{トポロジー}{43}
-\contentsline {subsubsection}{Motivation for lane model}{44}
-\contentsline {subsubsection}{アーキテクチャ}{45}
-\contentsline {subsection}{\numberline {5.3.2}経路切り替えアルゴリズム}{46}
-\contentsline {subsubsection}{コストベースの経路切り替え手法}{47}
-\contentsline {section}{\numberline {5.4}Discussion}{50}
-\contentsline {subsection}{\numberline {5.4.1}利点}{50}
-\contentsline {subsection}{\numberline {5.4.2}MPTCP実装:IPアドレスペア問題}{51}
-\contentsline {subsection}{\numberline {5.4.3}MHFT形成するためのコスト}{52}
-\contentsline {subsection}{\numberline {5.4.4}アルゴリズム実装の検討}{53}
-\contentsline {chapter}{\numberline {第6章}評価実験}{54}
-\contentsline {chapter}{\numberline {第7章}考察}{55}
-\contentsline {chapter}{\numberline {第8章}結論}{56}
-\contentsline {section}{\numberline {8.1}今後の課題}{56}
-\contentsline {chapter}{参考文献}{59}
-\contentsline {section}{\numberline {付録A}リンクパフォーマンス関数:Davidson関数}{63}
+\contentsline {subsubsection}{パケットロスが発生しないフローパターン}{29}
+\contentsline {subsubsection}{パケットロスが生じたフローパターン}{29}
+\contentsline {subsubsection}{TCP v.s. MPTCP}{30}
+\contentsline {section}{\numberline {4.3}実トラフィック解析}{31}
+\contentsline {subsection}{\numberline {4.3.1}性能障害}{34}
+\contentsline {subsubsection}{スイッチ - 性能障害}{35}
+\contentsline {subsubsection}{エンドノード - 性能障害}{36}
+\contentsline {section}{\numberline {4.4}検証実験}{37}
+\contentsline {subsection}{\numberline {4.4.1}実験環境}{37}
+\contentsline {subsection}{\numberline {4.4.2}実験結果}{38}
+\contentsline {subsection}{\numberline {4.4.3}考察}{40}
+\contentsline {subsection}{\numberline {4.4.4}Directing result}{41}
+\contentsline {chapter}{\numberline {第5章}提案手法}{42}
+\contentsline {section}{\numberline {5.1}Motivation}{42}
+\contentsline {section}{\numberline {5.2}Design}{44}
+\contentsline {subsection}{\numberline {5.2.1}データセンターレーンモデル}{45}
+\contentsline {subsubsection}{背景}{45}
+\contentsline {subsubsection}{Motivation}{46}
+\contentsline {subsubsection}{アーキテクチャ}{47}
+\contentsline {subsection}{\numberline {5.2.2}経路切り替えアルゴリズム}{47}
+\contentsline {subsubsection}{モチベーション}{48}
+\contentsline {subsubsection}{実装上の課題}{49}
+\contentsline {subsubsection}{リンクコストベースの経路切り替え手法}{49}
+\contentsline {section}{\numberline {5.3}Discussion}{51}
+\contentsline {subsection}{\numberline {5.3.1}利点}{51}
+\contentsline {subsection}{\numberline {5.3.2}アルゴリズム実装の検討}{53}
+\contentsline {chapter}{\numberline {第6章}評価}{54}
+\contentsline {section}{\numberline {6.1}実験環境}{54}
+\contentsline {subsection}{\numberline {6.1.1}評価メトリック}{55}
+\contentsline {subsection}{\numberline {6.1.2}比較対象}{55}
+\contentsline {section}{\numberline {6.2}基本性能:スループット}{56}
+\contentsline {section}{\numberline {6.3}基本性能:切替時間}{57}
+\contentsline {section}{\numberline {6.4}性能障害:Queue buildupに対する性能評価}{59}
+\contentsline {section}{\numberline {6.5}実環境でのトラフィックを想定した性能評価}{62}
+\contentsline {section}{\numberline {6.6}まとめ}{66}
+\contentsline {chapter}{\numberline {第7章}考察}{68}
+\contentsline {section}{\numberline {7.1}MPTCPを有効活用するトポロジーに関する考察}{68}
+\contentsline {section}{\numberline {7.2}レーンモデルに対する考察}{69}
+\contentsline {section}{\numberline {7.3}リンクコストベースの切替手法のパラメータに関する考察}{69}
+\contentsline {section}{\numberline {7.4}MPTCPアドレスペアの問題に関する考察}{70}
+\contentsline {section}{\numberline {7.5}Incast問題に対する考察}{71}
+\contentsline {chapter}{\numberline {第8章}結論}{72}
+\contentsline {chapter}{参考文献}{76}
+\contentsline {section}{\numberline {付録A}リンクパフォーマンス関数:Davidson関数}{81}

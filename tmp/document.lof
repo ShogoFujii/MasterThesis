@@ -1,42 +1,55 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces The control loop in DCTCP(DCTCPの制御の流れの模式図, キューの様子, しきい値を超えた時の通知の仕組み)}}{7}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Fair-share(e.g. DCTCP)and $D^3$ are sub-optimal in meeting deadline FCTベースでの通信の公平性についての図, グラフ)}}{11}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces DeTail's cross-layer design DeTailのクロスレイヤーで作用する仕組み}}{13}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces An example to understand RepFlow:RepFlowがうまく作用するシナリオ例}}{14}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces The control loop in DCTCP}}{7}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Fair-share(e.g. DCTCP)and ${\rm D^3}$ are sub-optimal in meeting deadline}}{11}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces DeTail's cross-layer design}}{13}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces An example to understand RepFlow}}{14}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Hierarchical network topology}}{16}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Fattree topology}}{16}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces BCube topology}}{17}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces OLDI architecture:OLDIアプリケーションアーキテクチャ(集約の際のデッドラインも)}}{22}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Hierarchical network topology}}{17}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Fattree topology}}{17}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces BCube topology}}{18}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces OLDI architecture}}{23}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Query trafficフロー完結時間 (Background trafficなし)}}{24}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Query trafficフロー完結時間(Background trafficあり)}}{24}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Short message trafficフロー完結時間(Background trafficあり)}}{25}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Background trafficスループット}}{25}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces 再現シミュレーション環境でのネットワークトポロジー}}{27}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces 再現実験結果}}{27}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Full windowとIntensive flowの比較}}{29}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Delay with lossとExtreme delayの比較}}{29}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces 再現実験でのフロー完結時間の累積確率分布}}{29}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Prestoクラスタの定常時のトラフィック分布}}{30}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces 管理ノードから見た定常時のトラフィック累積分布}}{31}
-\contentsline {figure}{\numberline {4.12}{\ignorespaces 定常時トラフィック:同時接続数の分布}}{31}
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Prestoクラスタのジョブ実行時のトラフィック分布}}{32}
-\contentsline {figure}{\numberline {4.14}{\ignorespaces 管理ノードから見たジョブ実行時のトラフィック累積分布}}{32}
-\contentsline {figure}{\numberline {4.15}{\ignorespaces ジョブ実行時トラフィック:同時接続数の分布}}{32}
-\contentsline {figure}{\numberline {4.16}{\ignorespaces 中継スイッチで引き起こすボトルネック}}{34}
-\contentsline {figure}{\numberline {4.17}{\ignorespaces 中継スイッチへのNIC負荷実機実験トポロジー}}{36}
-\contentsline {figure}{\numberline {4.18}{\ignorespaces エンドノードへのNIC負荷実機実験トポロジー}}{36}
-\contentsline {figure}{\numberline {4.19}{\ignorespaces 中継スイッチに対する負荷実験での70kbベンチマークトラフィックに対するフロー完結時間とリンク利用率}}{37}
-\contentsline {figure}{\numberline {4.20}{\ignorespaces エンドノードに対する負荷実験での70kbベンチマークトラフィックに対するフロー完結時間とリンク利用率}}{38}
-\contentsline {figure}{\numberline {4.21}{\ignorespaces スイッチに対する負荷実験でのバックグラウンドフローの影響}}{39}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Flow completion time of Query traffic with Background traffic}}{25}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Flow completion time of Short message traffic with Background traffic}}{26}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Flow completion time of Short message traffic with Background traffic}}{26}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Network topology on reproducing simulation}}{28}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces The result of the reproduction experiment}}{28}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Comparison between Full window and Intensive flow}}{30}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Comparison between Delay with loss and Extreme delay}}{30}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces CDF of flow completion time on reproduction experiment}}{31}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Distribution of Presto cluster in a steady state}}{32}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces CDF of the traffic from master node in a steady state}}{32}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Distribution of the number of concurrent connections in a steady state}}{33}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Distribution of Presto cluster in executing a job}}{34}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces CDF of the traffic from master node in executing a job}}{34}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Distribution of the number of concurrent connections in executing a job}}{35}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Bottoleneck in switch}}{36}
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Topology in benchmark test for the NIC of the switch}}{38}
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Topology in benchmark test for the NIC of the end-node}}{38}
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Link utilization and FCT of 70KB benchmark traffic for the switch}}{39}
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Link utilization and FCT of 70KB benchmark traffic for the end-node}}{40}
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Impact of background flow for the switch}}{41}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Scenario of queue buildup problem with multi-cost paths)}}{41}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Multi-homing in the FatTree Topology}}{44}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Datacenter Lane Network Model}}{46}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Techinical problem of creating subflow without complete paired IP addressses}}{51}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Current cost estimation vs. maximum possible number of hosts}}{52}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Scenario of queue buildup problem with multi-cost paths)}}{43}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces k=4 Dual-homing in the FatTree Topology}}{46}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Datacenter Lane Network Model}}{48}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Basic performance comparisons}}{57}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Basic performance path switching based on deadline}}{57}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Basic performance path switching based on link-cost}}{58}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Basic performance path switching based on link-cost}}{59}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Basic performance path switching based on link-cost}}{59}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Topolgy for impairment of Queue buildup evaluation}}{60}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Short flows average FCT in Queue buidup}}{61}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Short flows $95^{th}$ FCT in Queue buidup}}{62}
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Web search workload}}{63}
+\contentsline {figure}{\numberline {6.10}{\ignorespaces Data mining workload}}{63}
+\contentsline {figure}{\numberline {6.11}{\ignorespaces Short flows(0,100KB] average FCT in Websearch workload}}{64}
+\contentsline {figure}{\numberline {6.12}{\ignorespaces Short flows(0,100KB] $99^{th}$ FCT in Websearch workload}}{65}
+\contentsline {figure}{\numberline {6.13}{\ignorespaces Short flows(0,100KB] average FCT in Datamining workload}}{66}
+\contentsline {figure}{\numberline {6.14}{\ignorespaces Short flows(0,100KB] $99^{th}$ FCT in Datamining workload}}{66}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Current cost estimation vs. maximum possible number of hosts}}{69}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Techinical problem of creating subflow without complete paired IP addressses}}{71}
 \addvspace {10\p@ }

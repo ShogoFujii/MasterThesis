@@ -24,8 +24,7 @@
 \usepackage{algorithmic}
 
 
-\includeonly{proposal}
-
+% \includeonly{evaluation}
 
 % \usepackage[top=30truemm,bottom=30truemm,left=25truemm,right=25truemm]{geometry}
 %\usepackage{times, mathptm}
@@ -70,11 +69,11 @@
 {\Large \title \par} %
 \vspace{10mm}
 {\Large \@submission \par} %
-\vspace{20mm}
+\vspace{15mm}
 {\Large \shozoku \par} 
 {\Large \id \chosha \par} % 学籍番号部分
 \vspace{10mm}
-{\Large 指導教官  \teacher \par}
+{\Large 指導教員  \teacher \par}
 \vspace{10mm}
 {\Large \department \par}
 \vspace{10mm}
@@ -84,8 +83,9 @@
 \clearpage
 }
 %
-\daimoku{Multipath TCPを用いた \\ データセンターネットワークにおけるショートフロー完結時間の改善}
-\title{Improving the datacenter network with multipath TCP}
+\daimoku{Multipath TCPによる経路切り替え手法を用いた \\ データセンターネットワークにおける \\ ショートフロー完結時間の改善}
+\title{Improving the flow completion time of short flows in datacenter network
+with path switching by Multipath TCP}
 \date{\today}
 \shozoku{東京大学大学院 \\ 工学系研究科 電気系工学専攻}
 \department{The University of Tokyo \\ Graduate School of Engineering,
@@ -106,16 +106,45 @@ Department of Electrical Engineering and Information Systems}
 \maketitlea
 
 
-
 \begin{center}
 {\large {\bf 要旨}}
 \end{center}
+クラウド型のサービスの性質により, 今日のデータセンターではデータセンター内のトラフィックが増大しており,
+複数の経路を持つネットワーク環境を応用して, 通信性能向上を目指す取り組みがされている.
+しかし, 様々なニーズを抱えるトラフィックが混在している中で, レイテンシ志向なサイズの小さいフローに対し,
+既存のMPTCP実装では性能を劣化させる問題が報告されている.
+そこで本研究では, この問題に対し, 並列分散処理アプリケーションが稼働しているクラスターPCのトラフィックを観測する事で, 単一NIC(Network
+Interface Card)への通信集中によるキュー負荷の影響があることを検討し,
+サイズの大きいスループット指向なロングフローとサイズの小さいレイテンシ指向なショートフローが一つのリンクに混在して通信を行っていることを明らかにし,
+それによる通信性能障害が生じる技術的背景を考察した. 
+そして, フローの指向毎に異なる通信経路を利用するレーンモデルを提案した. 
+また, OSレベルから一つの通信を見た際に, そのフローの指向をフロー持続時間を用いて分類し, 経路の状況に合わせた経路切替手法を提案した. 
+提案手法をOSに実装し, シミュレーションを用いた評価を行い, ロングフローとショートフローが混在する環境下で,
+それぞれの指向毎に経路を切り替える制御を行うことで, ショートフロー通信を短縮化ならびに, ロングフローの通信性能を改善することを示した. 
 
-\vspace{20mm}
+
+\vspace{5mm}
 
 \begin{center}
 {\large \bf Abstract}
 \end{center}
+As increasing the amount of traffic in a datacenter by cloud service, the
+effective network for utilization of massive computer clusters has been studied.
+Recently, Multipath TCP(MPTCP) has been tackled this problem.
+MPTCP can achieve the effective consumptions of the resources with multipath,
+but a researcher reported MPTCP causes the delay of flow completion for short
+flows in such a multipath network environment.
+In this paper, I presented measurements of the distribute processing cluster
+PCs and reveal impairment mechanisms that lead to that latencies, rooted in single
+NIC(Network Interface Card) with intensive load traffic. 
+I revealed there are both latency-oriented short flow and throughput-oriented long flow in a datacenter network. 
+As the result, they lead to the performance impairment in flow completion time. 
+In order to solve this problem, I proposed datacenter lane model to utilize different paths for each requirement of the flow. 
+I developed the method of flow-classification for the orient and path-switching scheme to react the path condition with flow duration time, as approach just for end-node. 
+I implemented these techniques to the end-node OS, and evaluated by simulation experiment. 
+In my experiment, my proposals improve the performance for short flow in
+shortening the FCT and long flow in increasing throughput with the control to separate the mixture traffic into both latency oriented flow and throughput-oriented one.
+
 \clearpage
 
 \frontmatter
@@ -178,7 +207,7 @@ of data at Facebook,
 \url{https://www.facebook.com/notes/facebook-engineering/presto-interacting-with-petabytes-of-data-at-facebook/10151786197628920}}
 \bibitem{mapreduce}{Dean, Jeffrey, and Sanjay
 Ghemawat. "MapReduce: simplified data processing on large clusters." Communications of the ACM 51.1 (2008): 107-113.}
-\bibitem{fattree}{Al-Fares, Mohammad, Alexander Loukissas, and Amin Vahdat. "A
+\bibitem{fattree}{Al-Fares, Mohammad, Alexander L oukissas, and Amin Vahdat. "A
 scalable, commodity data center network architecture." ACM SIGCOMM Computer
 Communication Review. Vol. 3}
 \bibitem{dctcp}{Alizadeh, Mohammad, et al. "Data center tcp (dctcp)." ACM SIGCOMM Computer Communication Review 40.4 (2010): 63-74.}
@@ -265,23 +294,71 @@ System Technical Journal 32.2 (1953): 406-424.}
 Traffic Assignment Manual}
 \bibitem{davidson}{Davidson, K. B. "A flow travel time relationship for use in
 transportation planning." Australian Road Research Board (ARRB) Conference, 3rd, 1966, Sydney. Vol. 3. No. 1. 1966.}
-
+\bibitem{ns3}{Tazaki, Hajime, et al. "Direct code execution: Revisiting library
+os architecture for reproducible network experiments." Proceedings of the ninth ACM conference on Emerging networking experiments and technologies. ACM, 2013.}
+\bibitem{crossbar}{McKeown, Nick. "A fast switched backplane for a
+gigabit switched router." Business Communications Review 27.12 (1997): 1-30.}
+\bibitem{delay}{Priority flow control: Build reliable layer 2 infrastructure.
+\url{http://www.cisco.com/en/US/prod/collateral/switches/
+ps9441/ps9670/white_paper_c11-542809.pdf}}
+\bibitem{pdq}{Hong, Chi-Yao, Matthew Caesar, and P. Godfrey. "Finishing flows
+quickly with preemptive scheduling." ACM SIGCOMM Computer Communication Review 42.4 (2012): 127-138.}
+\bibitem{survey}{Liu, Shuhao, Hong Xu, and Zhiping Cai. "Low latency datacenter
+networking: A short survey." arXiv preprint arXiv:1312.3455 (2013).}
+\bibitem{hull}{Alizadeh, Mohammad, et al. "Less is more: trading a little
+bandwidth for ultra-low latency in the data center." Proceedings of the 9th USENIX conference on Networked Systems Design and Implementation. USENIX Association, 2012.}
+\bibitem{dibs}{Zarifis, Kyriakos, et al. "DIBS: just-in-time congestion
+mitigation for data centers." Proceedings of the Ninth European Conference on Computer Systems. ACM, 2014.}
+\bibitem{fastlane}{Zats, David, et al. FastLane: An agile congestion signaling
+mechanism for improving datacenter performance. No. UCB/EECS-2013-113. CALIFORNIA UNIV BERKELEY DEPT OF ELECTRICAL ENGINEERING AND COMPUTER SCIENCE, 2013.}
+\bibitem{cp}{Cheng, Peng, et al. "Catch the whole lot in an action: Rapid
+precise packet loss notification in data centers." Proc. USENIX NSDI. 2014.}
+\bibitem{mcp}{Chen, Li, et al. "Towards minimal-delay deadline-driven data
+center tcp." Proceedings of the Twelfth ACM Workshop on Hot Topics in Networks. ACM, 2013.}
+\bibitem{bcube}{Guo, Chuanxiong, et al. "BCube: a high performance,
+server-centric network architecture for modular data centers." ACM SIGCOMM Computer Communication Review 39.4 (2009): 63-74.}
+\bibitem{cong}{Raiciu, C., M. Handley, and D. Wischik. "Coupled congestion
+control for multipath transport protocols." draft-ietf-mptcp-congestion-01 (work in progress) (2011).}
+\bibitem{RTT_est}{Jacobsson, Krister, et al. "Round trip time estimation
+in communication networks using adaptive kalman filtering." (2004).}
+\bibitem{queue_delay}{Angrisani, Leopoldo, et al. "Measurement of processing and
+queuing delays introduced by an open-source router in a single-hop network."
+Instrumentation and Measurement, IEEE Transactions on 55.4 (2006): 1065-1076.}
 \end{thebibliography}
 \clearpage
 \def\thesection{}
 \def\thesubsection{\Alph{subsection}}
 \def\thesection{付録\Alph{section}}
 \setcounter{subsection}{0}
-\appendix
+\appendix*
 \section{リンクパフォーマンス関数:Davidson関数}
 リンクパフォーマンス関数は, ネットワークを構成する個々のリンクのサービス水準をリンク交通量とリンク属性の関数として表したものである. 
 本研究では, リンクのサービス水準には, フロー完結時間(旅行時間)を用いている. 
 リンクパフォーマンス関数は, 狭義の増加関数である必要があり, このことは待ち行列理論を用いて説明することができる. 
 
-今, 
+今, M/M/1($infty$)の待ち行列理論を考える. 
+この時, 到着率$\lambda$, サービス率$\mu$を用いて利用率$\rho$は以下のように表される. 
 
+\begin{equation}
+\label{utilization}
+\rho = \frac{\lambda}{\mu}
+\end{equation}
 
-またこの式遅れのパラメータ$J(>0)$を導入することでリンク総旅行時間は次のように定義される. 
+この利用率$\rho$と平均サービス時間$T_s$を用いて, 待ち時間$T_w$は以下のように表される. 
+\begin{equation}
+\label{traffic}
+T_w = \frac{\rho}{1-\rho} \times T_s
+\end{equation}
+
+次にあるリンクにおけるフロー完結時間$t$を導出する. 
+このリンクにおいて, 他のフローが存在しない時のフロー完結時間を$t_0$とする. 
+この時, 遅れのパラメータ$J(>0)$と式\ref{utilization}, \ref{traffic}を用いて以下のように表すことができる. 
+\begin{equation}
+\label{delay}
+J t_0 \frac{\rho}{1-\rho} = J t_0 \frac{q}{C-q} 
+\end{equation}
+ここで, $q$はリンク利用率, $C$はリンク容量である.
+これにより, フロー完結時間$t(q)$は次のように定義される. 
 \begin{eqnarray}
 t(q) = t_{0} + J t_{0} \frac{\rho}{1-\rho} = t_{0}\Bigl\{ 1 + J \bigl(
 \frac{q}{C-q} \bigr) \Bigr\}
